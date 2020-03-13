@@ -10,13 +10,21 @@ class App extends Component {
     super(props)
 
     this.state = {
-      products: [{name: 'food', price: 0, imgurl: 'google.com'}, {name: 'Bread', price: 2.50, imgurl: 'bread.com'}, {name:'steve', price: 40, imgurl: 'hedge.com'}]
+      products: []
     }
   }  
+
+  componentDidMount = () => {
+    axios.get('/api/inventory')
+    .then(res => this.setState({products: res.data}))
+    .catch(err => console.log(err))
+    
+  }
+
   render(){return (
     <div className="App">
       <Header />
-      <Form />
+      <Form getProducts={this.componentDidMount}/>
       <Dashboard products={this.state.products}/>
     </div>
   );
