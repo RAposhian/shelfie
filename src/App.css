@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+.header-container {
+   display: flex;
+   justify-content: flex-start;
+   align-items: center;
+   padding-left: 100px;
+   height: 100px;
+   top: 0px;
+   background-color: #D34735;
+   margin-bottom: 50px;
+}
+
+.logo-container {
+   display: flex;
+   align-items: center;
+   margin-right: 70px;
+   color: white;
+   font-size: 30px;
+   font-weight: bold;
+   font-family: 'Open Sans', sans-serif;
+}
+
+.nav {
+   text-decoration: none;
+   background-color: #ED6B5A;
+   border-radius: 5px;
+   font-size: 20px;
+   padding: 3px;
+   padding-left: 10px;
+   padding-right: 10px;
+   margin: 5px;
+   font-family: 'Open Sans', sans-serif;
+   color: black;
+   font-weight: bold;
+}
+
+.dash-container {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   align-items: center;
+}
+
+.product-container {
+   width: 600px;
+   height: 250px;
+   background-color: #D34735;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   flex-direction: column;
+   margin: 15px;
+   padding: 10px;
+   border-radius: 8px;
+   
+}
+
+.product-image {
+   display: flex;
+   align-self: flex-start;
+   background-color: white;
+   width: 250px;
+   height: 240px;
+   position: absolute;
+}
+
+.button-container {
+   display: flex;
+   justify-content: space-between;
+   width: 300px;
+   margin-left: 150px;
+   padding-left: 100px
+}
+
+.button-container button {
+   border: none;
+   background-color: #3AD886;
+   font-size: 15px;
+   width: 70px;
+   height: 30px;
+   border-radius: 5px;
+   font-family: 'Open Sans', sans-serif;
+   font-weight: bold;
+}
+
+.product-text {
+   font-family: 'Open Sans', sans-serif;
+   font-size: 25px;
+   margin-left: 50px;
+   display: flex;
+   flex-direction: column;
+   padding-bottom: 50px;
+}
+
+.form-container {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   width: 480px;
+   height: 500px;
+   background-color: #3AD886;
+   margin-left: 35%;
+   border-radius: 8px;
+}
+
+.image-add-form {
+   width: 320px;
+   height: 210px;
+   background-color: white;
+}
+
+.form-container input {
+   width: 400px;
+   height: 20px;
+}
+
+.form-container h1 {
+   display: flex;
+   align-self: flex-start;
+   padding-left: 38px;
+   font-size: 20px;
+   font-family: 'Open Sans', sans-serif;
+   margin: 5px;
+}
+
+.form-buttons {
+   display: flex;
+   width: 390px;
+   justify-content: space-between;
+   margin: 10px;
+}
+
+.form-buttons button{
+   border: none;
+   width: fit-content;
+   height: fit-content;
+   padding: 10px;
+   border-radius: 8px;
+   background-color: #ED6B5A;
+}

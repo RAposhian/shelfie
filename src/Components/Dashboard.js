@@ -28,7 +28,7 @@ class Dashboard extends Component {
    render(){
 
       return (
-         <div>{this.state.products.map((e, i) => <Products 
+         <div className='dash-container'>{this.state.products.map((e, i) => <Products 
             key={i} 
             products={e} 
             delete={this.deleteProducts}

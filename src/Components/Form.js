@@ -72,21 +72,25 @@ export default class Form extends Component {
    render() {
       
       return (
-         <div>
-            <input onChange={e => this.setState({name: e.target.value})} value={this.state.name}/>
-            <input type='number' onChange={e=> this.setState({price: e.target.value})} value={this.state.price}/>
+         <section className='form-container'>
+            <img src='' alt='product' className='image-add-form'></img>
+            <h1>Image URL:</h1>
             <input onChange={e => this.setState({imgurl: e.target.value})} value={this.state.imgurl} />
-            <section> 
+            <h1>Name:</h1>
+            <input onChange={e => this.setState({name: e.target.value})} value={this.state.name}/>
+            <h1>Cost:</h1>
+            <input type='number' onChange={e=> this.setState({price: e.target.value})} value={this.state.price}/>
+            <section className='form-buttons'> 
                
                {
                (this.state.toggle === '/add') ?
-               <Link to='/'><button onClick={this.handleAdd}>Add</button></Link>
+               <Link to='/'><button onClick={this.handleAdd}>Add to Inventory</button></Link>
                :
                <Link to='/'><button onClick={this.editProducts}>Save</button></Link>
                }
                <button onClick={this.handleCancel}>Cancel</button>
             </section>
-         </div>
+         </section>
       )
    }
 }
