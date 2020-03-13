@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 
 const Products = props => {
    const {id, name, price, imgurl} = props.products;
@@ -9,7 +10,7 @@ const Products = props => {
       <img src={imgurl} alt={name}/>
       <section>
          <button onClick={()=> props.delete(id)}>Delete</button>
-         <button>Edit</button>
+         <Link to={`/edit/${id}`}><button>Edit</button></Link>
       </section>
    </section>
  )
