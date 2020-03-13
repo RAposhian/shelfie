@@ -8,7 +8,8 @@ export default class Form extends Component {
       this.state = {
          name:'',
          price: 0,
-         imgurl: ''
+         imgurl: '',
+         editProductId: null
       }
       this.handleAdd = this.handleAdd.bind(this);
    }

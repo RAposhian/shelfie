@@ -11,5 +11,12 @@ addProduct: (req, res) => {
    db.add_product(product)
    .then(()=> res.sendStatus(200))
    .catch(err => res.status(500).send(err))
+},
+deleteProduct: (req, res) => {
+   const db = req.app.get('db');
+   const  {id} = req.params
+   db.delete_product(id)
+   .then(()=> res.sendStatus(200))
+   .catch(err=> res.status(500).send(err))
 }
 }

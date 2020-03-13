@@ -9,6 +9,8 @@ app.use(express.json())
 
 app.get('/api/inventory', ctrl.getInventory)
 app.post(`/api/product`, ctrl.addProduct)
+app.delete(`/api/product/:id`, ctrl.deleteProduct)
+app.put(`/api/product/:id`, ctrl.editProduct)
 
 
 massive({

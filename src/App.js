@@ -10,7 +10,8 @@ class App extends Component {
     super(props)
 
     this.state = {
-      products: []
+      products: [],
+      selectedProduct: null
     }
   }  
 
@@ -24,8 +25,8 @@ class App extends Component {
   render(){return (
     <div className="App">
       <Header />
-      <Form getProducts={this.componentDidMount}/>
-      <Dashboard products={this.state.products}/>
+      <Form getProducts={this.componentDidMount} selectedProduct={this.state.selectedProduct}/>
+      <Dashboard products={this.state.products} getProducts={this.componentDidMount}/>
     </div>
   );
 }
